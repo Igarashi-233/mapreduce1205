@@ -27,8 +27,8 @@ public class WholeFileDriver {
         job.setInputFormatClass(WholeFileInputFormat.class);
         job.setOutputFormatClass(SequenceFileOutputFormat.class);
 
-        FileInputFormat.setInputPaths(job, new Path("C:\\Users\\IGARASHI\\Desktop\\myFileInputFormat\\input"));
-        FileOutputFormat.setOutputPath(job, new Path("C:\\Users\\IGARASHI\\Desktop\\myFileInputFormat\\output"));
+        FileInputFormat.setInputPaths(job, new Path("C:\\Users\\IGARASHI\\Desktop\\MapReducer\\myFileInputFormat\\input"));
+        FileOutputFormat.setOutputPath(job, new Path("C:\\Users\\IGARASHI\\Desktop\\MapReducer\\myFileInputFormat\\output"));
 
         boolean b = job.waitForCompletion(true);
         System.exit(b ? 0 : 1);
